@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    position: relative;
+    height: 619px;
+    width: 100vw;
+    /* border: 1px solid #000; */
+    overflow: hidden;
+}
+.main .new1{
+    position: absolute;
+    height: 310px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-image:linear-gradient(rgba(0, 0, 255, 0.394), rgb(38, 149, 186)) , url(./images/night_sky.png);
+    background-size: 100% 100%;
+    /* overflow: hidden; */
+}
+.new1 .sun{
+    position: absolute;
+    height: 100px;
+    width: 10%;
+    /* border: 1px solid yellow; */
+    background-image: url(./images/sun.png);
+    background-size: 100% 100%;
+    left: -180px;
+    animation: sun 8s linear ;
+}
+@keyframes sun{
+    0%{
+    left:-180px;
+    }
+    50%{
+    left: 80px;
+    }
+    80%{
+        left: 80px;
+    }
+    100%{
+    left:-180px;
+    }
+}
+.new2{
+    position: relative;
+    height: 150px;
+    width: 50%;
+    /* border: 1px solid red; */
+    top: 80px;
+    left: -700px;
+    animation-name: clouds;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+}
+@keyframes clouds{
+    0%{
+        left: -700px;
+    }
+    40%{
+        left: 150px;
+    }
+    60%{
+        left: 150px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.cards{
+    position: relative;
+    height: 80px;
+    width: 20%;
+    /* border: 1px solid yellow; */
+    float: left;
+    margin: 15px;
+    top: 40px;
+    background-image: url(./images/cloud.png);
+    background-size: 100% 100%;
+}
+.c2{
+    position: relative;
+    top: 0px;
+    background-image: url(./images/cloud2.png);
+    background-size: 100% 150%;
+}
+.c3{
+    position: relative;
+    top: 0px;
+    background-image: url(./images/cloud2.png);
+    background-size: 100% 150%;
+}
+.birds{
+    position: relative;
+    height: 180px;
+    width: 40%;
+    overflow-x: hidden;
+    /* border: 1px solid green; */
+    float: left;
+    margin: 20px;
+    left: -1150px;
+    top: -70px;
+    background-image: url(./images/birds.gif);
+    background-size: 100% 100%;
+    animation-name: birds;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 22s;
+    animation-iteration-count: infinite;
+    /* opacity: 0; */
+}
+@keyframes birds{
+    0%{
+        left: 100%;
+        /* opacity: 0;   */
+    }
+    100%{
+        left: -100%;
+        /* opacity: 1; */
+    }
+}
+.b1{
+    position: relative;
+    top: -200px;
+}
+.rain{
+    position: relative;
+    height: 400px;
+    width: 45%;
+    /* border: 1px solid red; */
+    margin-left: 160px;
+    margin-top: 150px;
+    background-image: url(./images/rain.png);
+    background-size: 100% 100%;
+    color: darkgrey;
+    animation-name: rain;
+    opacity: 0;
+    animation-duration: 4s;
+    animation-delay: 15s;
+}
+@keyframes rain{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.new3{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: -240px;
+    background-image: url(./images/sea.png);
+    background-size: cover;
+    /* overflow-y: hidden; */
+}
+.boat{
+    position: absolute;
+    height: 150px;
+    width: 30%;
+    /* border: 1px solid blue; */
+    left: 300px;
+    background-image: url(./images/boat.png);
+    background-size: 100% 100%;
+    animation-name: boat;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    /* overflow: hidden; */
+}
+@keyframes boat{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+.fish{
+    position: relative;
+    height: 70px;
+    width: 10%;
+    /* border: 1px solid orange; */
+    float: left;
+    margin-top: 200px;
+    margin-left: 200px;
+    background-image:url(./images/fish.png);
+    background-size: 100% 100%;
+    opacity: 0.6;
+    animation-name: fish;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* overflow-y: hidden; */
+}
+@keyframes fish{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+.f1{
+    /* position: relative; */
+    top: -80px;
+}
